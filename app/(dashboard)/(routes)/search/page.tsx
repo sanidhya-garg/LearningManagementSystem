@@ -10,7 +10,7 @@ import { Categories } from "./_components/categories";
 
 interface SearchPageProps {
   searchParams: {
-    title: string;
+    searchQuery: string; // Change the name to searchQuery
     categoryId: string;
   }
 };
@@ -30,9 +30,11 @@ const SearchPage = async ({
     }
   });
 
+  // Perform a full-text search for courses using the search query
   const courses = await getCourses({
     userId,
-    ...searchParams,
+    title: searchParams.searchQuery, // Pass the searchQuery parameter
+    categoryId: searchParams.categoryId,
   });
 
   return (
