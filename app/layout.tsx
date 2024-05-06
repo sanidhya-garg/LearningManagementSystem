@@ -8,8 +8,8 @@ import { ConfettiProvider } from '@/components/providers/confetti-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Inplace',
-  description: 'Courses by Inplace',
+  title: 'Unipace',
+  description: 'Courses by Unipace',
 }
 
 export default function RootLayout({
