@@ -21,6 +21,11 @@ const guestRoutes = [
     label: "Community",
     href : "/community"
   },
+  {
+    icon: Users,
+    label: "Code Playground",
+    href : "/playground"
+  },
 ];
 
 const teacherRoutes = [
